@@ -14,7 +14,8 @@ function submitForm() {
     header: true,
     complete: function (results) {
       var filteredData = results.data.filter(function (row) {
-        return selectedThemes.some(function (theme) {
+        // Check if all selected themes have a value of 1 in the current row
+        return selectedThemes.every(function (theme) {
           return row[theme] === "1";
         });
       });
