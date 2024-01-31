@@ -1,4 +1,4 @@
-lofunction submitForm() {
+function submitForm() {
   var selectedThemes = [];
   var checkboxes = document.getElementsByName("theme");
 
