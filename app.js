@@ -19,7 +19,7 @@ function submitForm() {
           return row[theme] === "1";
         });
       });
-
+      console.log("Column1 Values:", filteredData);
       var column1Values = filteredData.map(function (row) {
         return row["Colonne1"];
       });
