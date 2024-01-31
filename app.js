@@ -1,4 +1,4 @@
-function submitForm() {
+lofunction submitForm() {
   var selectedThemes = [];
   var checkboxes = document.getElementsByName("theme");
 
@@ -29,7 +29,7 @@ function submitForm() {
       var resultContainer = document.getElementById("result-container");
 
       // Effacez le contenu existant de l'élément (au cas où vous exécutez cette fonction plusieurs fois)
-      resultContainer.innerHTML = "";
+      resultContainer.innerHTML = "hello";
       
       // Parcourez les valeurs et ajoutez-les à l'élément
       column1Values.forEach(function (value) {
