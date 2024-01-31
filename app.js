@@ -1,5 +1,3 @@
-import Papa from 'papaparse';
-
 function submitForm() {
   var selectedThemes = [];
   var checkboxes = document.getElementsByName("theme");
