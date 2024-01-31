@@ -7,7 +7,8 @@ function submitForm() {
       selectedThemes.push(checkbox.value);
     }
   });
-
+  console.log("Selected Themes:", selectedThemes);
+  
   Papa.parse("Indexation MQ03.csv", {
     download: true,
     header: true,
@@ -23,7 +24,7 @@ function submitForm() {
       });
 
       // Display the result on the webpage
-      console.log(column1Values);
+      console.log("Column1 Values:", column1Values);
     },
   });
 }
