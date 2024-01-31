@@ -21,7 +21,7 @@ lofunction submitForm() {
       });
 
       var column1Values = filteredData.map(function (row) {
-        return row["Col1"];
+        return row["Colonne1"];
       });
 
       // Display the result on the webpage
