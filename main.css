@@ -231,6 +231,9 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
   -webkit-border-radius: 10px;
 }
 
+#contentinfo {
+  color: #FCD61C
+}
 
 /*
   Extras
