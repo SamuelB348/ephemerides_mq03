@@ -34,6 +34,10 @@ function submitForm() {
       var heading = document.createElement("h2");
       heading.textContent = "Exercices disponibles";
       resultContainer.appendChild(heading);
+
+      var infoParagraph = document.createElement("p");
+      infoParagraph.textContent = "Format : Exercice <semaine>.<jour> avec jour n°6 = Weekend.";
+      resultContainer.appendChild(infoParagraph);
       
       // Parcourez les valeurs et ajoutez-les à l'élément
       column1Values.forEach(function (value) {
