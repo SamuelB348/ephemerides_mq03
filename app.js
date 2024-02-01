@@ -30,11 +30,15 @@ function submitForm() {
 
 // Effacez le contenu existant de l'élément (au cas où vous exécutez cette fonction plusieurs fois)
       resultContainer.innerHTML = "";
+
+      var heading = document.createElement("h2");
+      heading.textContent = "Exercices disponibles";
+      resultContainer.appendChild(heading);
       
       // Parcourez les valeurs et ajoutez-les à l'élément
       column1Values.forEach(function (value) {
         var paragraph = document.createElement("p");
-        paragraph.textContent = value;
+        paragraph.textContent = "Exercice " + value;
         resultContainer.appendChild(paragraph);
       });
     },
