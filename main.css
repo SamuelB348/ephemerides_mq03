@@ -126,7 +126,7 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 }
 
   /* Banner */
-  #banner h1 {font-size: 3.571em; line-height: .6;}
+  #banner h1 {font-size: 3.571em; line-height: .6; color: #FCD61C;}
   #banner h1 a:link, #banner h1 a:visited {
     color: #FCD61C;
     display: block;
