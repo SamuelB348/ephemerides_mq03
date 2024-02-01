@@ -36,6 +36,7 @@ function submitForm() {
         var paragraph = document.createElement("p");
         paragraph.textContent = value;
         resultContainer.appendChild(paragraph);
+      });
     },
   });
 }
