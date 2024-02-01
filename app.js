@@ -25,6 +25,17 @@ function submitForm() {
 
       // Display the result on the webpage
       console.log("Column1 Values:", column1Values);
+
+      var resultContainer = document.getElementById("result-container");
+
+// Effacez le contenu existant de l'élément (au cas où vous exécutez cette fonction plusieurs fois)
+      resultContainer.innerHTML = "";
+      
+      // Parcourez les valeurs et ajoutez-les à l'élément
+      column1Values.forEach(function (value) {
+        var paragraph = document.createElement("p");
+        paragraph.textContent = value;
+        resultContainer.appendChild(paragraph);
     },
   });
 }
