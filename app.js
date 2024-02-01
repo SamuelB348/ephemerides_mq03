@@ -36,7 +36,7 @@ function submitForm() {
       resultContainer.appendChild(heading);
 
       var infoParagraph = document.createElement("p");
-      infoParagraph.textContent = "Format : Exercice <semaine>.<jour> avec jour n°6 = Weekend.";
+      infoParagraph.textContent = "Format : Exercice <n°semaine>.<n°jour> avec jour n°6 = Weekend.";
       resultContainer.appendChild(infoParagraph);
       
       // Parcourez les valeurs et ajoutez-les à l'élément
