@@ -37,7 +37,7 @@ function submitForm() {
 
         // Ajouter une image centrée
         var img = document.createElement("img");
-        img.src = "lien_de_votre_image.jpg"; // Remplacez ceci par le lien exact de votre image
+        img.src = "quand on ne sait pas où on va, il faut y aller.jpg"; // Remplacez ceci par le lien exact de votre image
         img.style.display = "block";
         img.style.margin = "auto";
         resultContainer.appendChild(img);
