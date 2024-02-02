@@ -27,24 +27,36 @@ function submitForm() {
       console.log("Column1 Values:", column1Values);
 
       var resultContainer = document.getElementById("result-container");
-
-// Effacez le contenu existant de l'élément (au cas où vous exécutez cette fonction plusieurs fois)
-      resultContainer.innerHTML = "";
-
-      var heading = document.createElement("h2");
-      heading.textContent = "Exercices disponibles";
-      resultContainer.appendChild(heading);
-
-      var infoParagraph = document.createElement("p");
-      infoParagraph.textContent = "Format : Exercice <n°semaine>.<n°jour> avec jour n°6 = Weekend.";
-      resultContainer.appendChild(infoParagraph);
       
-      // Parcourez les valeurs et ajoutez-les à l'élément
-      column1Values.forEach(function (value) {
-        var paragraph = document.createElement("p");
-        paragraph.textContent = "Exercice " + value;
-        resultContainer.appendChild(paragraph);
-      });
+      resultContainer.innerHTML = "";
+      
+      if (column1Values.length === 0) {
+        var noExerciseMessage = document.createElement("h2");
+        noExerciseMessage.textContent = "Pas d'exercices disponibles pour cette combinaison !";
+        resultContainer.appendChild(noExerciseMessage);
+
+        // Ajouter une image centrée
+        var img = document.createElement("img");
+        img.src = "lien_de_votre_image.jpg"; // Remplacez ceci par le lien exact de votre image
+        img.style.display = "block";
+        img.style.margin = "auto";
+        resultContainer.appendChild(img);
+      } else {
+        var heading = document.createElement("h2");
+        heading.textContent = "Exercices disponibles";
+        resultContainer.appendChild(heading);
+
+        var infoParagraph = document.createElement("p");
+        infoParagraph.textContent = "Format : Exercice <n°semaine>.<n°jour> avec jour n°6 = Weekend.";
+        resultContainer.appendChild(infoParagraph);
+
+        // Parcourez les valeurs et ajoutez-les à l'élément
+        column1Values.forEach(function (value) {
+          var paragraph = document.createElement("p");
+          paragraph.textContent = "Exercice " + value;
+          resultContainer.appendChild(paragraph);
+        });
+      }
     },
   });
 }
